@@ -122,11 +122,14 @@
     .image-grid img {
       width: 265px;
       height: 265px;
-      object-fit: cover;
+      object-fit: contain;     /* ✅ Shows entire image */
+      background: #fff;        /* Adds a clean background */
+      border: 1px solid #ccc;  /* Optional: add border for certificates */
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 5px;
     }
-
+    
     .hobby-icons {
       display: flex;
       flex-wrap: wrap;
