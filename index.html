@@ -107,35 +107,34 @@
       background-color: #cfe2ff;
     }
 
-    .project {
-      margin-bottom: 15px;
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
     }
 
-.image-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 20px;
-}
+    /* Big images (projects, experience, certificates) */
+    .image-grid img {
+      max-width: 265px;
+      max-height: 265px;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 5px;
+    }
 
-.image-grid img {
-  max-width: 180px;  /* Bigger size */
-  max-height: 180px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  background: #fff;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-  padding: 8px;
-}
+    /* Smaller skill logos only */
+    .skill-grid img {
+      max-width: 90px;
+      max-height: 90px;
+    }
 
-
-
-
-    
     .hobby-icons {
       display: flex;
       flex-wrap: wrap;
@@ -234,10 +233,10 @@
 <section id="about">
   <h2>About</h2>
   <p>
-    I am a passionate and driven computer science student at Lovely Professional University (LPU), with a specialization in Data Science. I enjoy solving real-world problems using machine learning, automation, and full-stack web development. My curiosity for AI and enthusiasm for continuous learning have led me to explore areas like deep learning, natural language processing, and cloud-based technologies.
+    I am a passionate and driven computer science student at Lovely Professional University (LPU), specializing in Data Science. I enjoy solving real-world problems using machine learning, automation, and full-stack web development. My curiosity for AI and continuous learning has led me to explore areas like deep learning, NLP, and cloud computing.
   </p>
   <p>
-    I believe in building smart and efficient solutions, not just for academics but for creating real impact. With experience in multiple languages and frameworks, and a love for collaboration and communication, I strive to contribute meaningfully in any technical or team setting.
+    I believe in building smart and efficient solutions, collaborating with teams, and contributing meaningfully to any project or organization.
   </p>
 </section>
 
@@ -245,7 +244,7 @@
   <h2>Projects</h2>
   <div class="project">
     <strong>Titanic Survival Prediction</strong><br>
-    Built a multi-layer perceptron from scratch using NumPy for survival prediction.<br>
+    Built a multi-layer perceptron from scratch using NumPy.<br>
     <a href="https://github.com/ankitr22/Ann_Titanic" target="_blank">GitHub Link</a>
   </div>
   <div class="project">
@@ -268,7 +267,6 @@
     <li>Enhanced communication and outreach skills</li>
     <li>Tools: Excel</li>
   </ul>
-
   <div class="image-grid">
     <img src="ngo1.jpeg" alt="NGO 1">
     <img src="ngo2.jpeg" alt="NGO 2">
@@ -290,7 +288,7 @@
   <h2>Skills</h2>
 
   <h3>Programming Languages</h3>
-  <div class="image-grid">
+  <div class="image-grid skill-grid">
     <img src="pythonImg.jpeg" alt="Python">
     <img src="cppImg.png" alt="C++">
     <img src="javaImg.png" alt="Java">
@@ -300,38 +298,32 @@
   </div>
 
   <h3>Tools & Databases</h3>
-  <div class="image-grid">
+  <div class="image-grid skill-grid">
     <img src="excelImg.png" alt="Excel">
     <img src="mySqlImg.png" alt="MySQL">
     <img src="mongoImg.png" alt="MongoDB">
     <img src="tableau.png" alt="Tableau">
   </div>
 
-  <h3>Cloud & Platforms</h3>
-  <div class="image-grid">
+  <h3>Platforms & Libraries</h3>
+  <div class="image-grid skill-grid">
     <img src="awsImg.png" alt="AWS">
     <img src="linuxLogo.png" alt="Linux">
-  </div>
-
-  <h3>Data Science Libraries</h3>
-  <div class="image-grid">
     <img src="panda.png" alt="Pandas">
     <img src="seaborn.jpeg" alt="Seaborn">
-    <img src="sklearn.png" alt="Scikit-Learn">
+    <img src="sklearn.png" alt="Sklearn">
   </div>
 </section>
-
-
 
 <section id="others">
   <h2>Certificates & Achievements</h2>
   <ul>
-    <li><strong>Certificates:</strong> AWS, IBM Data Science, ML (NPTEL), Front End Dev, Public Speaking</li>
+    <li><strong>Certificates:</strong> AWS, IBM Data Science, NPTEL ML, Front End Dev, Public Speaking</li>
     <li><strong>Achievements:</strong> Team7 Club Member, Java Peer Tutoring Finalist, Role-plays, GD Participant</li>
   </ul>
   <div class="image-grid">
-    <img src="aws.png" alt="AWS Certificate">
-    <img src="ibmDS.png" alt="IBM Data Science">
+    <img src="aws.png" alt="AWS">
+    <img src="ibmDS.png" alt="IBM DS">
     <img src="nptelML.png" alt="NPTEL ML">
     <img src="frontEnd.png" alt="FrontEnd">
     <img src="publicSpeaking.png" alt="Public Speaking">
