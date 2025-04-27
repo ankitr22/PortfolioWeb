@@ -114,23 +114,24 @@
 .image-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 20px;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 
 .image-grid img {
-  max-width: 80px;  /* Reduced size */
-  max-height: 80px; /* Reduced size */
+  max-width: 180px;  /* Bigger size */
+  max-height: 180px;
   width: auto;
   height: auto;
   object-fit: contain;
   background: #fff;
   border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  padding: 5px;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  padding: 8px;
 }
+
 
 
 
@@ -288,7 +289,7 @@
 <section id="skills">
   <h2>Skills</h2>
 
-  <h3>Languages</h3>
+  <h3>Programming Languages</h3>
   <div class="image-grid">
     <img src="pythonImg.jpeg" alt="Python">
     <img src="cppImg.png" alt="C++">
@@ -306,12 +307,20 @@
     <img src="tableau.png" alt="Tableau">
   </div>
 
-  <h3>Platforms & Environments</h3>
+  <h3>Cloud & Platforms</h3>
   <div class="image-grid">
     <img src="awsImg.png" alt="AWS">
     <img src="linuxLogo.png" alt="Linux">
   </div>
+
+  <h3>Data Science Libraries</h3>
+  <div class="image-grid">
+    <img src="panda.png" alt="Pandas">
+    <img src="seaborn.jpeg" alt="Seaborn">
+    <img src="sklearn.png" alt="Scikit-Learn">
+  </div>
 </section>
+
 
 
 <section id="others">
